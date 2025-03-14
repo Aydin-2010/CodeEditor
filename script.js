@@ -9,11 +9,18 @@
     gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
 });*/
 
+
 console.log("Before Init:", editor.getOption("autoCloseBrackets"));
-editor = CodeMirror.fromTextArea(document.getElementById("InputField"), {
+
+const editor = CodeMirror.fromTextArea(document.getElementById("InputField"), {
     mode: "javascript",
     theme: "darcula",
     lineNumbers: true,
     autoCloseBrackets: true
 });
-console.log("After Init:", editor.getOption("autoCloseBrackets"));
+
+console.log("After Init (immediate):", editor.getOption("autoCloseBrackets"));
+
+setTimeout(() => {
+    console.log("After 3 seconds:", editor.getOption("autoCloseBrackets"));
+}, 3000);
