@@ -1,4 +1,4 @@
-let editor = CodeMirror.fromTextArea(document.getElementById("InputField")), {
+const editor = CodeMirror.fromTextArea(document.getElementById("InputField"), {
   mode: "javascript",
   lineWrapping: true,
   indentUnit: 4,
@@ -6,4 +6,4 @@ let editor = CodeMirror.fromTextArea(document.getElementById("InputField")), {
   lineNumbers: true,
   matchBrackets: true,
   autoCloseBrackets: true,
-}
+});
