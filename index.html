@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>  
     <meta charset="UTF-8">
@@ -21,5 +21,32 @@
     <textarea id = "InputField" placeholder="Type here..."></textarea>
     <script src = script.js></script>
 
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMirror Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/theme/darcula.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/addon/edit/matchbrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/addon/edit/closebrackets.min.js"></script>
+</head>
+<body>
+    <textarea id="InputField"></textarea>
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("InputField"), {
+            mode: "javascript",
+            theme: "darcula",
+            lineNumbers: true,
+            matchBrackets: true,
+            autoCloseBrackets: true,  // Ensure this is enabled
+        });
+    </script>
 </body>
 </html>
