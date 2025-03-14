@@ -1,4 +1,4 @@
-/*var editor = CodeMirror.fromTextArea(document.getElementById("InputField"), {
+var editor = CodeMirror.fromTextArea(document.getElementById("InputField"), {
     mode: "javascript",  // Change this to match your language mode
     theme: "darcula",    // Dark theme (or use "monokai", "dracula", etc.)
     lineNumbers: true,   // Show line numbers
@@ -7,20 +7,4 @@
     autoCloseBrackets: true, // Auto-close brackets
     foldGutter: true,    // Enable code folding
     gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
-});*/
-
-
-console.log("Before Init:", editor.getOption("autoCloseBrackets"));
-
-const editor = CodeMirror.fromTextArea(document.getElementById("InputField"), {
-    mode: "javascript",
-    theme: "darcula",
-    lineNumbers: true,
-    autoCloseBrackets: true
 });
-
-console.log("After Init (immediate):", editor.getOption("autoCloseBrackets"));
-
-setTimeout(() => {
-    console.log("After 3 seconds:", editor.getOption("autoCloseBrackets"));
-}, 10000);
