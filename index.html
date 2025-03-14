@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>  
     <meta charset="UTF-8">
@@ -22,74 +22,5 @@
     <textarea id = "InputField" placeholder="Type here..."></textarea>
   
     <script src = "script.js"></script>
-</body>
-</html>-->
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeMirror Editor with Autocomplete</title>
-
-    <!-- CodeMirror Core Stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/codemirror.min.css">
-
-    <!-- CodeMirror Theme (Darcula) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/theme/darcula.min.css">
-
-    <!-- CodeMirror Addons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/mode/javascript/javascript.min.js"></script>
-
-    <!-- Autocompletion Addons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/addon/hint/show-hint.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/addon/hint/show-hint.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.14/addon/hint/javascript-hint.min.js"></script>
-
-    <style>
-        /* Set the height of the editor */
-        #editor {
-            height: 90vh;
-            width: 100%;
-            font-size: 14px;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Textarea container for CodeMirror -->
-    <textarea id="editor" placeholder="Type your code here..."></textarea>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Initialize CodeMirror
-            var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
-                mode: "javascript",         // Set mode to JavaScript
-                theme: "darcula",           // Set theme (you can choose others like "monokai", "dracula", etc.)
-                lineNumbers: true,          // Show line numbers
-                matchBrackets: true,        // Enable bracket matching
-                autoCloseBrackets: true,    // Automatically close brackets
-                foldGutter: true,           // Enable fold gutter
-                gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"], // Add gutters for line numbers and folding
-                lineWrapping: true,         // Enable line wrapping
-                indentUnit: 4,              // Set indentation size to 4 spaces
-                smartIndent: true,          // Enable smart indentation
-                tabSize: 4,                 // Set tab size to 4 spaces
-                extraKeys: {
-                    "Ctrl-Space": "autocomplete" // Trigger autocompletion with Ctrl-Space
-                }
-            });
-
-            // Optionally, enable automatic completion as you type
-            editor.on("inputRead", function(editor, change) {
-                if (change.text[0] === "." || change.text[0] === "(") {
-                    editor.showHint({ completeSingle: false });  // Show suggestions on dot or parenthesis
-                }
-            });
-        });
-    </script>
-
 </body>
 </html>
