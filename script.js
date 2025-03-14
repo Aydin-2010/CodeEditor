@@ -3,7 +3,7 @@ const editor = CodeMirror.fromTextArea(document.getElementById("InputField"), {
   theme: "dracula",
   lineWrapping: true,
   lineNumbers: true,
-  matchBrackets: true,
+  //matchBrackets: true,
   autoCloseBrackets: true,
   foldGutter: false,
 });
