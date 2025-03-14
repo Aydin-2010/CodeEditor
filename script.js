@@ -1,4 +1,4 @@
-const editor = CodeMirror.fromTextArea(document.getElementById("InputField")), {
+let editor = CodeMirror.fromTextArea(document.getElementById("InputField")), {
   lineWrapping: true,
   indentUnit: 4,
   smartIndent: true,
