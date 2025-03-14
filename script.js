@@ -23,4 +23,4 @@ console.log("After Init (immediate):", editor.getOption("autoCloseBrackets"));
 
 setTimeout(() => {
     console.log("After 3 seconds:", editor.getOption("autoCloseBrackets"));
-}, 3000);
+}, 10000);
