@@ -1,5 +1,5 @@
 // Initialize CodeMirror
-var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+let editor = CodeMirror.fromTextArea(document.getElementById("InputField"), {
     mode: "javascript",  // Change this to match your language mode
     theme: "darcula",    // Dark theme (or use "monokai", "dracula", etc.)
     lineNumbers: true,   // Show line numbers
