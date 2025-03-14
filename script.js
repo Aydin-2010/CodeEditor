@@ -1,6 +1,6 @@
 const editor = CodeMirror.fromTextArea(document.getElementById("InputField"), {
   mode: "javascript",
-  theme: "dracula",
+  theme: "darcula",
   lineWrapping: true,
   lineNumbers: true,
   //matchBrackets: true,
