@@ -23,6 +23,10 @@ textarea {
   resize: vertical;
 }
 
+.cm-s-default { background: #1e1e1e !important; color: #ffffff !important; }
+.cm-s-default .CodeMirror-gutters { background: #1e1e1e !important; border-right: 1px solid #3a3a3a; }
+.cm-s-default .CodeMirror-linenumber { color: #bbbbbb !important; }
+
 .cm-quotation { color: #a5d6ff; }  /* Quotations */
 .cm-print { color: #d2a8ff; font-weight: bold; } /* print & println */
 .cm-symbol { color: #79c0ff; } /* Arithmetic & Conditional symbols */
