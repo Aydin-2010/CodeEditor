@@ -23,8 +23,13 @@ textarea {
   resize: vertical;
 }
 
-.cm-s-default { background: #1e1e1e !important; color: #ffffff !important; }
-.cm-s-default .CodeMirror-linenumber { color: #bbbbbb !important; }
+.CodeMirror {
+    background: #1e1e1e !important; /* Dark background */
+    /*color: #ffffff !important;      /* Light text */
+    height: 100%; /* Ensure full height */
+}
+
+.CodeMirror-linenumber { color: #bbbbbb !important; }
 
 .cm-quotation { color: #a5d6ff; }  /* Quotations */
 .cm-print { color: #d2a8ff; font-weight: bold; } /* print & println */
