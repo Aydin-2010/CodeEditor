@@ -22,3 +22,9 @@ textarea {
   background-color: #1F1F1F;
   resize: vertical;
 }
+
+.cm-quotation { color: #a5d6ff; }  /* Quotations */
+.cm-print { color: #d2a8ff; font-weight: bold; } /* print & println */
+.cm-symbol { color: #79c0ff; } /* Arithmetic & Conditional symbols */
+.cm-int { color: #ffa657; font-weight: bold; } /* int and !int */
+.cm-value { color: #7ee787; } /* Numbers & Boolean */
