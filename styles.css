@@ -17,7 +17,6 @@ body {
 
 textarea {
   min-width: 100%;
-  /*min-height: 70vh;*/
   padding: 2.5%;
   background-color: #1F1F1F;
   resize: vertical;
