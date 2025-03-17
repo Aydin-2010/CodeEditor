@@ -24,7 +24,7 @@ textarea {
 }
 
 .CodeMirror {
-    background: #1e1e1e !important; /* Dark background */
+    background: #0d1117 !important; /* Dark background */
     /*color: #ffffff !important;      /* Light text */
     min-height: 90vh; /* Ensure full height */
 }
