@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   color: #f5f8fc;
 }
 
@@ -29,7 +29,7 @@ textarea {
 
 .CodeMirror-gutters {
   background: #1c2a2e !important;
-  border-right: 10px solid #1c2a2e !important;
+  border-right: 10vw solid #1c2a2e !important;
   width: 8% !important;
 }
 
