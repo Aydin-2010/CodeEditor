@@ -23,10 +23,11 @@ textarea {
 }
 
 .CodeMirror {
-    background: #0d1117 !important; /* Dark background */
-    /*color: #ffffff !important;      /* Light text */
-    min-height: 90vh; /* Ensure full height */
+    background: #0d1117 !important;
+    min-height: 90vh;
 }
+
+.CodeMirror-gutters { background: #1c2a2e !important;}
 
 .CodeMirror-linenumber { color: #bbbbbb !important; }
 
