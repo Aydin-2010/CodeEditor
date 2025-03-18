@@ -27,7 +27,10 @@ textarea {
     min-height: 90vh;
 }
 
-.CodeMirror-gutters { background: #1c2a2e !important;}
+.CodeMirror-gutters {
+  background: #1c2a2e !important;
+  border-right: 10px solid #1c2a2e;
+}
 
 .CodeMirror-linenumber { color: #bbbbbb !important; }
 
