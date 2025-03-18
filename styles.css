@@ -30,9 +30,14 @@ textarea {
 .CodeMirror-gutters {
   background: #1c2a2e !important;
   border-right: 10px solid #1c2a2e !important;
+  width: 8% !important;
 }
 
-.CodeMirror-linenumber { color: #bbbbbb !important; }
+.CodeMirror-linenumber {
+  width: 100% !important;
+  text-align: right;
+  color: #bbbbbb !important; 
+}
 
 .cm-quotation { color: #a5d6ff; }  /* Quotations */
 .cm-print { color: #d2a8ff; font-weight: bold; } /* print & println */
