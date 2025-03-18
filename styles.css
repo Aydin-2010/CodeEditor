@@ -29,12 +29,12 @@ textarea {
 
 .CodeMirror-gutters {
   background: #1c2a2e !important;
-  border-right: 10vw solid #1c2a2e !important;
+  border-right: 100px solid #1c2a2e !important;
   min-width: 8%;
 }
 
 .CodeMirror-linenumber {
-  min-width: 100%;
+  min-width: 90%;
   text-align: right;
   color: #bbbbbb !important; 
 }
